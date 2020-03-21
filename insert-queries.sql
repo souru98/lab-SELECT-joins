@@ -3,9 +3,9 @@ insert into role(id,name)values(2,'guide');
 
 select * from role;
 
-insert into skill(id,description,name)values(1,'self learning','learn');
-insert into skill(id,description,name)values(2,'technical skills','coding');
-select * from skill;
+insert into skillss(id,description,name)values(1,'self learning','learn');
+insert into skillss(id,description,name)values(2,'technical skills','coding');
+select * from skillss;
 
 insert into post_type(id,name)values(1,'business');
 insert into post_type(id,name)values(2,'business');

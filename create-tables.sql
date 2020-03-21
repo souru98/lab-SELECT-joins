@@ -1,5 +1,5 @@
 create table role(Id NUMBER(20), name varchar2(255) NOT NULL,primary key(Id));
-create table skill(Id NUMBER(20)primary key, description varchar2(255) NULL, name varchar(255) NOT NULL);
+create table skillss(Id NUMBER(20)primary key, description varchar2(255) NULL, name varchar(255) NOT NULL);
 create table post_type(Id NUMBER(20)primary key,name varchar2(255) NOT NULL);
 create table department(Id NUMBER(20)primary key, name varchar2(255) NOT NULL);
 
@@ -73,9 +73,11 @@ create table user_new
   profile_id NUMBER(20) NULL,
   role_id NUMBER(20) NOT NULL,
   username varchar2(255) NOT NULL,
-  FOREIGN KEY(profile_id) REFERENCES profile(Id),
-  FOREIGN KEY(role_id) REFERENCES role(Id)
+ FOREIGN KEY(profile_id) REFERENCES profile(Id),
+FOREIGN KEY(role_id) REFERENCES role(Id)
 );
+
+
 desc user_new;
 
 CREATE table querytable
